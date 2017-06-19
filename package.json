@@ -1,0 +1,20 @@
+{
+  "name": "hrr24-mvp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel . -w  --out-dir compiled --presets=es2015,react --ignore=node_modules,compiled,.idea --source-maps inline",
+    "start": "babel . -w  --out-dir compiled --presets=es2015,react --ignore=node_modules,compiled,.idea --source-maps inline | live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "express": "^4.15.3",
+    "node": "0.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
