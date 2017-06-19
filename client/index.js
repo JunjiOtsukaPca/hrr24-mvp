@@ -1,1 +1,1 @@
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App getList={window.getList}/>, document.getElementById('app'));

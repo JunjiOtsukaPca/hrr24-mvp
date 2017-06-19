@@ -1,0 +1,17 @@
+"use strict";
+
+var WikipediaList = function WikipediaList(props) {
+  return React.createElement(
+    "div",
+    null,
+    "I am here",
+    React.createElement(WikipediaListEntry, {
+      getList: props.getList,
+      searchFor: props.searchFor,
+      clickSearchFor: props.clickSearchFor
+    })
+  );
+};
+
+window.WikipediaList = WikipediaList;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2NsaWVudC9jb21wb25lbnRzL1dpa2lwZWRpYUxpc3QuanN4Il0sIm5hbWVzIjpbIldpa2lwZWRpYUxpc3QiLCJwcm9wcyIsImdldExpc3QiLCJzZWFyY2hGb3IiLCJjbGlja1NlYXJjaEZvciIsIndpbmRvdyJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFJQSxnQkFBZ0IsU0FBaEJBLGFBQWdCLENBQUNDLEtBQUQ7QUFBQSxTQUNsQjtBQUFBO0FBQUE7QUFBQTtBQUVFLHdCQUFDLGtCQUFEO0FBQ0UsZUFBU0EsTUFBTUMsT0FEakI7QUFFRSxpQkFBV0QsTUFBTUUsU0FGbkI7QUFHRSxzQkFBZ0JGLE1BQU1HO0FBSHhCO0FBRkYsR0FEa0I7QUFBQSxDQUFwQjs7QUFXQUMsT0FBT0wsYUFBUCxHQUF1QkEsYUFBdkIiLCJmaWxlIjoiV2lraXBlZGlhTGlzdC5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBXaWtpcGVkaWFMaXN0ID0gKHByb3BzKSA9PiAoXHJcbiAgPGRpdj5cclxuICAgIEkgYW0gaGVyZVxyXG4gICAgPFdpa2lwZWRpYUxpc3RFbnRyeVxyXG4gICAgICBnZXRMaXN0PXtwcm9wcy5nZXRMaXN0fVxyXG4gICAgICBzZWFyY2hGb3I9e3Byb3BzLnNlYXJjaEZvcn1cclxuICAgICAgY2xpY2tTZWFyY2hGb3I9e3Byb3BzLmNsaWNrU2VhcmNoRm9yfVxyXG4gICAgLz5cclxuICA8L2Rpdj5cclxuKVxyXG5cclxud2luZG93Lldpa2lwZWRpYUxpc3QgPSBXaWtpcGVkaWFMaXN0OyJdfQ==
