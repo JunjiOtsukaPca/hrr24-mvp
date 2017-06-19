@@ -9,6 +9,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
+      <a id = "randomPage" href = "https://en.wikipedia.org/wiki/Special:Random" onclick> Click Here For Random Page </a>
         Hello npm
       </div>
     )
