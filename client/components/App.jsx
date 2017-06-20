@@ -8,8 +8,11 @@ class App extends React.Component {
       this.setState({searchingFor: searchValue})
     }
     this.clickSearchFor = () => {
-      console.log(this.state.searchingFor);
-      this.getList = window.getList(this.state.searchingFor);
+      this.getList = window.getList(this.state.searchingFor, (searchResult) => {
+        this.setState({
+          searchingFor: searchResult
+        })
+      });
       $('.textBox').val('');
     }
   }
@@ -21,7 +24,7 @@ class App extends React.Component {
         href = "https://en.wikipedia.org/wiki/Special:Random"> Click Here For Random Page </a>
         <div>
           <WikipediaList
-            getList={this.getList}
+            listOfResults={console.log(this.state.searchingFor)}
             searchFor={this.searchFor.bind(this)}
             clickSearchFor={this.clickSearchFor.bind(this)}
           />
