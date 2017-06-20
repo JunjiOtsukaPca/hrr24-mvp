@@ -2,7 +2,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchingFor: ''
+      searchingFor: []
     }
     this.searchFor = (searchValue) => {
       this.setState({searchingFor: searchValue})
@@ -24,10 +24,10 @@ class App extends React.Component {
         href = "https://en.wikipedia.org/wiki/Special:Random"> Click Here For Random Page </a>
         <div>
           <WikipediaList
-            listOfResults={console.log(this.state.searchingFor)}
             searchFor={this.searchFor.bind(this)}
             clickSearchFor={this.clickSearchFor.bind(this)}
           />
+          <ListToRender list={this.state.searchingFor}/>
         </div>
         <div>
           Hello npm
@@ -38,4 +38,9 @@ class App extends React.Component {
   }
 }
 
+        //   {
+        //     (() => {if (this.state.searchingFor) {
+        //     console.log(true);
+        //   }})
+        // }
 window.App = App;
