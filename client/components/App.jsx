@@ -2,7 +2,12 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchingFor: []
+      searchingFor: [
+        ['check'],
+        ['The result will pop up here'],
+        ['The hyperlink will be here'],
+        ['please']
+      ]
     }
     this.searchFor = (searchValue) => {
       this.setState({searchingFor: searchValue})
